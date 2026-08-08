@@ -1,16 +1,8 @@
 require("dotenv").config();
-
-console.log("DATABASE CONFIG CHECK:");
-console.log("DB_HOST:", process.env.DB_HOST);
-console.log("DB_PORT:", process.env.DB_PORT);
-console.log("DB_USER:", process.env.DB_USER);
-console.log("DB_NAME:", process.env.DB_NAME);
-
 require("./config/db");
 const express = require("express");
 const path = require("path");
 const cors = require("cors");
-require("dotenv").config();
 
 const app = express();
 
