@@ -1,4 +1,14 @@
 require("dotenv").config();
+const db = require("./config/db");
+
+db.query("SELECT 1 AS test", (err, result) => {
+    if (err) {
+        console.error("DATABASE TEST FAILED:", err);
+    } else {
+        console.log("DATABASE TEST SUCCESS:", result);
+    }
+});
+
 require("./config/db");
 const express = require("express");
 const path = require("path");
