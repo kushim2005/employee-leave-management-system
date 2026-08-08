@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 const authRoutes = require("./routes/authRoutes");
-const testRoutes = require("./routes/testroutes");
+const testRoutes = require("./routes/testRoutes");
 const managerRoutes = require("./routes/managerRoutes");
 const leaveRoutes = require("./routes/leaveRoutes");
 const notificationRoutes = require("./routes/notificationRoutes");
