@@ -8,6 +8,13 @@ db.query("SELECT 1 AS test", (err, result) => {
         console.log("DATABASE TEST SUCCESS:", result);
     }
 });
+db.query("SELECT * FROM users LIMIT 1", (err, result) => {
+    if (err) {
+        console.error("USERS TABLE TEST FAILED:", err);
+    } else {
+        console.log("USERS TABLE TEST SUCCESS:", result);
+    }
+});
 
 require("./config/db");
 const express = require("express");
