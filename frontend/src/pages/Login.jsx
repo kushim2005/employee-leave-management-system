@@ -14,7 +14,7 @@ function Login() {
 
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/auth/login",
+                "https://employee-leave-management-system-production-1648.up.railway.app/api/auth/login",
                 {
                     username,
                     password

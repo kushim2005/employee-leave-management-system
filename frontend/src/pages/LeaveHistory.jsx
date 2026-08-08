@@ -21,7 +21,7 @@ function LeaveHistory() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:5000/api/leave/my-leaves",
+                "https://employee-leave-management-system-production-1648.up.railway.app/api/leave/my-leaves",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -269,7 +269,7 @@ function LeaveHistory() {
                                             {leave.document ? (
 
                                                 <a
-                                                    href={`http://localhost:5000/uploads/${leave.document}`}
+                                                    href={`https://employee-leave-management-system-production-1648.up.railway.app/uploads/${leave.document}`}
                                                     target="_blank"
                                                     rel="noreferrer"
                                                 >

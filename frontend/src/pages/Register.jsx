@@ -31,7 +31,7 @@ function Register() {
             setLoading(true);
 
             await axios.post(
-                "http://localhost:5000/api/auth/register",
+                "https://employee-leave-management-system-production-1648.up.railway.app/api/auth/register",
                 {
                     username,
                     password

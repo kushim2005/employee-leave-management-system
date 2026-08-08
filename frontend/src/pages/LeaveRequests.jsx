@@ -22,7 +22,7 @@ function LeaveRequests() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:5000/api/manager/leaves",
+                "https://employee-leave-management-system-production-1648.up.railway.app/api/manager/leaves",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -77,7 +77,7 @@ function LeaveRequests() {
             const token = localStorage.getItem("token");
 
             await axios.put(
-                `http://localhost:5000/api/manager/leaves/${id}/status`,
+                `https://employee-leave-management-system-production-1648.up.railway.app/api/manager/leaves/${id}/status`,
                 {
                     status: status,
                     remarks: remark
@@ -329,7 +329,7 @@ function LeaveRequests() {
                                             {leave.document ? (
 
                                                 <a
-                                                    href={`http://localhost:5000/uploads/${leave.document}`}
+                                                    href={`https://employee-leave-management-system-production-1648.up.railway.app/uploads/${leave.document}`}
                                                     target="_blank"
                                                     rel="noreferrer"
                                                 >

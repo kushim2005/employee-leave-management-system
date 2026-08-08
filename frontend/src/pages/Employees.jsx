@@ -21,7 +21,7 @@ function Employees() {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "http://localhost:5000/api/manager/employees",
+                "https://employee-leave-management-system-production-1648.up.railway.app/api/manager/employees",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

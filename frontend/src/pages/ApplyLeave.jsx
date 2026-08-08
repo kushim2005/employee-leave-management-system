@@ -36,7 +36,7 @@ function ApplyLeave() {
             const token = localStorage.getItem("token");
 
             const response = await axios.post(
-                "http://localhost:5000/api/leave/apply",
+                "https://employee-leave-management-system-production-1648.up.railway.app/api/leave/apply",
                 formData,
                 {
                     headers: {
